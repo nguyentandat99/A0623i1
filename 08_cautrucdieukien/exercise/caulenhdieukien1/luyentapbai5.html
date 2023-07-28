@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let midTermScore = parseInt(prompt("Nhập điểm giữa kì:"));
+    let finalTermScore = parseInt(prompt("Nhập điểm thi cuối kì:"));
+    let averageScore = (midTermScore * 1.0 + finalTermScore * 3)/3;
+    if (averageScore >0 && averageScore <10){
+        if (averageScore >=8.5){
+            alert("giỏi")
+
+        }else if (averageScore >=7) {
+            alert("khá")
+        }else if (averageScore >=5) {
+            alert("trung bình")
+        }else if (averageScore <5){
+            alert("yếu")
+        }
+    }
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let phantramhoahong = parseFloat(prompt("nhập phần trăm hoa hồng :"))
+  let giaban = parseInt(prompt("nhập giá bán :"))
+  let hoahongdoanhthu = phantramhoahong * giaban ;
+  if (hoahongdoanhthu >=100000000) {
+    hoahongdoanhthu = giaban * 5 * 100 ;
+    alert("doanh thu la: " +hoahongdoanhthu)
+  }else if (hoahongdoanhthu >=30000000) {
+    hoahongdoanhthu = giaban * 3 *100;
+  }
+</script>
+
+</body>
+</html>

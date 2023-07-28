@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("nhập số nguyên :"));
+    let count = 0;
+
+    function kiemtrasnt(n) {
+        for (let i = 2; i < n; i++) {
+            if (n % i === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    let i = 2;
+    while (number > count) {
+        if(kiemtrasnt(i)){
+            document.write(i+"<br>");
+            count++;
+        }
+        i++;
+    }
+
+
+</script>
+
+
+</body>
+</html>

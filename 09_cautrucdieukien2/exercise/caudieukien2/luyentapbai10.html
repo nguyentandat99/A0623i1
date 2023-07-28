@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soLuongKwh = parseFloat(prompt("Nhập số điện năng tiêu thụ của tháng: "))
+    const giaDienBac1 = 1678;
+    const giaDienBac2 = 1734;
+    const giaDienBac3 = 2014;
+    const giaDienBac4 = 2536;
+    const giaDienBac5 = 2834;
+
+    let thanhTien;
+    if (soLuongKwh <= 50) {
+        thanhTien = soLuongKwh * giaDienBac1;
+    } else if (soLuongKwh <= 100) {
+        thanhTien = 50 * giaDienBac1 + (soLuongKwh - 50) * giaDienBac2;
+    } else if (soLuongKwh <= 200) {
+        thanhTien = 50 * giaDienBac1 + 50 * giaDienBac2 + (soLuongKwh - 100) * giaDienBac3;
+    } else if (soLuongKwh <= 300) {
+        thanhTien = 50 * giaDienBac1 + 50 * giaDienBac2 + 100 * giaDienBac3 + (soLuongKwh - 200) * giaDienBac4;
+    } else {
+        thanhTien = 50 * giaDienBac1 + 50 * giaDienBac2 + 100 * giaDienBac3 + 100 * giaDienBac4 + (soLuongKwh - 300) * giaDienBac5;
+    }
+    alert(`Tiêu thụ ${soLuongKwh} kWh, giá điện là: ${thanhTien} VNĐ`);
+</script>
+
+</body>
+</html>

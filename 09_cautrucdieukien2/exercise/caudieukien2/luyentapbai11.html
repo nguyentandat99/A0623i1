@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let thunhap = parseFloat(prompt("Nhập tổng thu nhập nhận được trên một tháng: "))
+  let songuoi = parseFloat(prompt("Nhập số người phụ thuộc: "))
+  var tiensonguoi = songuoi*4400000;
+  var thuthapchiuthue = thunhap - 11000000 -tiensonguoi;
+  if(thuthapchiuthue<=5000000){
+    var bac1= thuthapchiuthue *5/100;
+    alert("Thuế thu nhập cá nhân là: "+bac1+"VND")
+  }else if(thuthapchiuthue<=10000000){
+    var bac2 =((thuthapchiuthue - 5000000)*10/100)+250000;
+    alert("Thuế thu nhập cá nhân là: "+bac2+"VND")
+  }else if(thuthapchiuthue<=18000000){
+    var bac3 =((thuthapchiuthue - 10000000)*15/100)+750000;
+    alert("Thuế thu nhập cá nhân là: "+bac3+"VND")
+  }else if(thuthapchiuthue<=32000000){
+    var bac4 =((thuthapchiuthue - 18000000)*20/100)+750000+1200000;
+    alert("Thuế thu nhập cá nhân là: "+bac4+"VND")
+  }else if(thuthapchiuthue<=52000000){
+    var bac5 =((thuthapchiuthue - 32000000)*25/100)+1950000+2800000;
+    alert("Thuế thu nhập cá nhân là: "+bac5+"VND")
+  }else if(thuthapchiuthue<=80000000){
+    var bac6 =((thuthapchiuthue - 52000000)*30/100)+1950000+2800000+5000000;
+    alert("Thuế thu nhập cá nhân là: "+bac6+"VND")
+  }else if(thuthapchiuthue>80000000){
+    var bac7 =((thuthapchiuthue - 80000000)*35/100)+1950000+2800000+5000000+8400000;
+    alert("Thuế thu nhập cá nhân là: "+bac7+"VND")
+  }
+
+</script>
+
+</body>
+</html>
