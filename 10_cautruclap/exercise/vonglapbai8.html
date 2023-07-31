@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="game">
+    <h1>Game đoán số </h1>
+    <button type="button" class="" onclick="game()">chơi</button>
+</div>
+<script>
+    function game() {
+        let a = parseInt(prompt("nhập a : "));
+        let b = parseInt(prompt("nhập b :"));
+        let c = Math.floor(Math.random() * (b - a + 1) + a);
+        let D = parseInt(prompt("nhập một số : "));
+        console.log(c);
+        let count = 1;
+        while (c !== D) {
+            if (count > 3) {
+                break;
+            }
+            if (D > c) {
+                alert(" lớn hơn");
+            } else if (D < c) {
+                alert(" bé hơn");
+            }
+            D = parseInt(prompt("nhập một số : "));
+            count++;
+        }
+
+        if (c === D) {
+            alert(" Ban da doan trung ");
+        } else {
+            alert("Ban da doan sai 3 lan. Game Over!");
+        }
+
+
+    }
+
+
+</script>
+</body>
+</html>
