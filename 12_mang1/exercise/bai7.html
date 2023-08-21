@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = []
+  let check = false
+  for (let i=0;i<10;i++){
+    arr[i]=parseInt(prompt("nhập các số nguyên :"+(i+1)))
+  }let v = parseInt(prompt("nhập 1 số nguyên "))
+  for (let i=0;i<arr.length;i++){
+    if (v===arr[i]){
+      arr.splice(i,1);
+      check = true
+      break;
+    }
+  }if (check){
+    alert("dãy số nguyên sau khi loại v là :"+arr)
+  }else{
+    alert("v ko thuộc mảng ")
+  }
+
+</script>
+
+</body>
+</html>

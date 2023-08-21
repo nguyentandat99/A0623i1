@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="mycanvas"></canvas>
+<script>
+    class Rectangle {
+        constructor(chieudai, chieurong) {
+            this.chieudai = chieudai;
+            this.chieurong = chieurong;
+
+        }
+
+        dientich() {
+            return this.chieudai * this.chieurong
+        }
+
+        chuvi() {
+            return (this.chieudai * this.chieurong) * 2
+        }
+
+        canvas() {
+            document.getElementById("mycanvas").width = this.chieudai;
+            document.getElementById("mycanvas").height = this.chieurong;
+            document.getElementById("mycanvas").style.border = "1px solid red";
+        }
+    }
+    let Rec = new Rectangle (prompt("nhap chieu dai : "),prompt("nhap chieu rong :"))
+    alert(Rec.)
+</script>
+</body>
+</html>

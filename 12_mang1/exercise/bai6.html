@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = []
+  let check = false
+  for (let i =0;i<10;i++){
+     arr[i]= parseInt(prompt("nhập các số nguyên :"+i))
+  }let v = parseInt(prompt("nhập 1 số nguyên :"))
+  for (let i = 0 ;i<arr.length;i++){
+    if (v === arr[i]){
+      check = true
+    }
+  }if (check){
+    document.writeln("V is in the arra")
+  }else{
+    document.writeln("V is not in the array")
+  }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature {
+      constructor(selcius) {
+          this.selcius = selcius;
+      }
+      Fahrenheit(){
+          return ((this.selcius * 1.8000)+32.00)
+      }
+      Kelvin (){
+          return (this.selcius + 273.15)
+      }
+  }
+  let Tem= new Temperature(25)
+  console.log(Tem.Fahrenheit())
+  console.log(Tem.Kelvin())
+</script>
+</body>
+</html>
